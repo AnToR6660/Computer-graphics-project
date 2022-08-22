@@ -151,3 +151,51 @@ void drawLamp(){   //lamp up
 
       glFlush();
 }
+
+void drawRoad(){
+     ///road black
+     glBegin(GL_QUADS);
+      glColor3f(0.0f, 0.0f, 0.0f);
+      glVertex2f(-1.0f,-0.40f);
+      glVertex2f(1.0f,-0.40f);
+      glVertex2f(1.0f,-0.150f);
+      glVertex2f(-1.0f,-0.150f);
+      glEnd();
+
+      ///road block01 L
+      glBegin(GL_QUADS);
+      glColor3f(1.0f, 1.0f, 1.0f);
+      glVertex2f(-0.90f, -0.30f);
+      glVertex2f(-0.600f, -0.30f);
+      glVertex2f(-0.650f,  -0.25f);
+      glVertex2f(-0.950f,  -0.25f);
+      glEnd();
+
+      ///road block02 L
+      glBegin(GL_QUADS);
+      glColor3f(1.0f, 1.0f, 1.0f);
+      glVertex2f(-0.40f, -0.30f);
+      glVertex2f(-0.100f, -0.30f);
+      glVertex2f(-0.150f,  -0.25f);
+      glVertex2f(-0.450f,-0.25f);
+      glEnd();
+
+      ///road block03
+      glBegin(GL_QUADS);
+      glColor3f(1.0f, 1.0f, 1.0f);
+      glVertex2f(0.10f,-0.30f);
+      glVertex2f(0.350f,-0.30f);
+      glVertex2f(0.30f,-0.25f);
+      glVertex2f(0.050f,-0.25f);
+      glEnd();
+
+      ///road block04
+      glBegin(GL_QUADS);
+      glColor3f(1.0f, 1.0f, 1.0f);
+      glVertex2f(0.60f,-0.30f);
+      glVertex2f(0.850f,-0.30f);
+      glVertex2f(0.80f,-0.25f);
+      glVertex2f(0.550f,-0.25f);
+      glEnd();
+}
+
