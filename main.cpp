@@ -2302,10 +2302,82 @@ glVertex2f(-0.33f, 0.1f); // x, y
 glVertex2f(-0.33f, 0.02f);
 glVertex2f(-0.285f, 0.02f); // x, y
 glVertex2f(-0.285f, 0.1f);
-
-
-
 glEnd();
+
+    //road for car // x, y
+glBegin(GL_QUADS);              // Each set ofcar fark form a quad
+	glColor3ub(189, 189, 189  );
+	// Red
+
+	glVertex2f(-0.266f, 0.0f);
+	glVertex2f(-0.266f, 0.19f);
+	glVertex2f(-0.21f, 0.19f);    // x, y
+	glVertex2f(-0.21f, 0.0f);
+
+	glEnd();
+
+glBegin(GL_QUADS);              // Each set ofcar fark form a quad
+	glColor3ub(255, 255, 255  );
+	// Red
+
+	glVertex2f(-0.265f, 0.12f);   //road for car // x, y
+	glVertex2f(-0.255f, 0.15f);
+	glVertex2f(-0.228f, 0.15f);    // x, y
+	glVertex2f(-0.218f, 0.12f);
+
+	glEnd();
+	///////
+	glBegin(GL_QUADS);              // Each set ofcar fark form a quad
+	glColor3ub(0, 0, 255  );
+	// Red
+
+	glVertex2f(-0.255f, 0.15f);   //road for car // x, y
+	glVertex2f(-0.228f, 0.15f);    // x, y
+	glVertex2f(-0.228f, 0.16f);
+	glVertex2f(-0.255f, 0.16f);
+
+	glEnd();
+	////
+
+glBegin(GL_QUADS);              // Each set ofcar fark form a quad
+	glColor3ub(0, 0, 255  );
+	// Red
+
+	glVertex2f(-0.265f, 0.1f);   //road for car // x, y
+	glVertex2f(-0.265f, 0.13f);
+	glVertex2f(-0.218f, 0.13f);    // x, y
+	glVertex2f(-0.218f, 0.1f);
+	glEnd();
+	glBegin(GL_QUADS);
+glColor3ub(255, 238, 88  );
+	// Red
+
+	glVertex2f(-0.262f, 0.109f);   //road for car light // x, y
+	glVertex2f(-0.262f, 0.125f);
+	glVertex2f(-0.253f, 0.125f);    // x, y
+	glVertex2f(-0.253f, 0.109f);
+
+	glEnd();
+	glBegin(GL_QUADS);
+glColor3ub(255, 238, 88  );
+	// Red
+
+	glVertex2f(-0.23f, 0.109f);   //road for car light // x, y
+	glVertex2f(-0.23f, 0.125f);
+	glVertex2f(-0.221f, 0.125f);    // x, y
+	glVertex2f(-0.221f, 0.109f);
+
+	glEnd();
+
+	glLineWidth(3.5);
+	glBegin(GL_LINES);             // Each set of 4 vertices form a quad
+	glColor3ub(0, 0, 0 ); // Red
+glVertex2f(-0.261f, 0.095f);    // x, y
+glVertex2f(-0.253f, 0.095f);
+glVertex2f(-0.233f, 0.095f);    // x, y
+glVertex2f(-0.225f, 0.095f);
+	glEnd();
+
 
 
 
