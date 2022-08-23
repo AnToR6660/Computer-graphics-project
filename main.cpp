@@ -3,6 +3,9 @@
 #include <GL/glut.h>
 #define PI 3.141516
 #include<math.h>
+#include<iostream>
+using namespace std;
+
 
 int sunStatus=0;
 int carLightStatus=0;
@@ -2775,4 +2778,74 @@ void rain_button(int button, int state, int x, int y){
         r = 0;
     }
 }
+
+
+
+
+
+//////move algo//////////
+void keyboard(unsigned char key, int x, int y){
+
+
+	 if (key == 's' || key == 's'){		//sun start
+		sunStatus = 1;
+		speed1=0.002;
+	}
+	 if (key == 'S' || key == 'S'){		//sun stop
+		speed1=0;
+	}
+	if (key == 'l' || key == 'l'){		//carLight start
+		carLightStatus = 1;
+	}
+	 if (key == 'L' || key == 'L'){		//carLight stop
+		carLightStatus=0;
+	}
+	if (key == 'n' || key == 'N'){		//Night
+		nightStatus=1;
+	}
+	if (key == 'd' || key == 'D'){		//Day
+		nightStatus=0;
+	}
+}
+
+void myInit(void)
+{
+glClearColor(1.0, 1.0, 1.0, 1.0);
+glColor3f(0.0f, 0.0f, 0.0f);
+glPointSize(4.0);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
+
+}
+
+int main(int argc, char** argv) {
+   glutInit(&argc, argv);
+   glutInitWindowSize(700, 700);
+   glutInitWindowPosition(0, 0);
+   glutCreateWindow("Ocean and City's View");
+    cout << "Project Title: Ocean and City's View \n" << endl;
+    cout<<"Press 's' = Sun Start"<<endl;
+    cout<<"Press 'S' = Sun Stop"<<endl;
+
+    cout<<"Press 'l' = Car Light Start"<<endl;
+    cout<<"Press 'L' = Car Light Stop"<<endl;
+    cout<<"Press 'N' = Switch to NIGHT view."<<endl;
+    cout<<"Press 'D' = Switch to DAY view."<<endl;
+    cout<<"Press 'LMB' = Start RAIN."<<endl;
+    cout<<"Press 'RMB' = Stop RAIN."<<endl<<endl;
+    cout<<"Group Members:\n          NAME              ID\nSHEIKH TAHMEED HOSSAIN, 20-42981-1\nUDAY KUMAR SARKER PRANTO, 20-42941-1\nMD. OMAR FARUK FAISAL, 20-43669-2, FARIHA SHAHRIN,20-42929-1
+"<<endl;
+
+   glutDisplayFunc(display);
+   glutKeyboardFunc(keyboard);
+   glutTimerFunc(100,update,0);
+   glutTimerFunc(100,update1,0);
+    glutTimerFunc(100, update_rain, 0);
+    glutMouseFunc(rain_button);
+   myInit();
+   glutMainLoop();
+   return 0;
+}
+
 
