@@ -2765,7 +2765,7 @@ void update_rain(int value){
     position_rain2 += speed_rain2;
 	glutPostRedisplay();
 	glutTimerFunc(100, update_rain, 0);
-}
+    }
 
 void rain_button(int button, int state, int x, int y){
     if(button == GLUT_LEFT_BUTTON){
