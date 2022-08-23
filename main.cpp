@@ -2547,4 +2547,95 @@ glLineWidth(5.0);
 	glEnd();
 }
 
+void hile(){ ////hill
+
+glBegin(GL_TRIANGLES);              // Each set of 4 after hill vertics form a quad
+	glColor3f(0.10,0.3,0.3 ); // Red
+
+	glVertex2f(0.15f, 0.54f);
+	glVertex2f(0.02f,  0.40f);   // x, y
+	glVertex2f(0.28f, 0.40f);
+
+	glEnd();
+
+glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.3,0.3 ); // Red
+
+	glVertex2f(0.28f, 0.40f);
+	glVertex2f(0.42f,  0.40f);   // x, y
+	glVertex2f(0.35f, 0.50f);
+
+	glEnd();
+
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(-0.02f, 0.40f);
+	glVertex2f(-0.02f,  0.50f);   // x, y
+	glVertex2f(0.1f, 0.40f);
+
+	glEnd();
+
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(-0.02f, 0.40f);
+	glVertex2f(0.08f,  0.54f);   // x, y
+	glVertex2f(0.18f, 0.40f);
+
+	glEnd();
+
+glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.1f, 0.40f);
+	glVertex2f(0.28f,  0.54f);   // x, y
+	glVertex2f(0.38f, 0.40f);
+
+	glEnd();
+
+glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.32f, 0.40f);
+	glVertex2f(0.42f,  0.54f);   // x, y
+	glVertex2f(0.52f, 0.40f);
+
+	glEnd();
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.44f, 0.40f);
+	glVertex2f(0.63f,  0.58f);   // x, y
+	glVertex2f(0.72f, 0.40f);
+
+	glEnd();
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.63f, 0.40f);
+	glVertex2f(0.72f,  0.50f);   // x, y
+	glVertex2f(0.72f, 0.40f);
+
+	glEnd();
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.87f, 0.40f);
+	glVertex2f(0.94f,  0.53f);   // x, y
+	glVertex2f(1.2f, 0.40f);
+
+	glEnd();
+	glBegin(GL_TRIANGLES);              // Each set of 4 vertics form a quad
+	glColor3f(0.10,0.5,0.5 ); // Red
+
+	glVertex2f(0.87f, 0.40f);
+	glVertex2f(0.87f,  0.50f);   // x, y
+	glVertex2f(0.94f, 0.40f);
+
+glEnd();
+
+}
+
+
 
