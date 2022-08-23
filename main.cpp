@@ -2380,7 +2380,7 @@ glVertex2f(-0.225f, 0.095f);
 
 /////Hospital
 
-glBegin(GL_QUADS);              // Each set ofbulding body
+glBegin(GL_QUADS);              // Each set of building body
 	glColor3ub(255, 255, 255 );
 	// Red
 
@@ -2390,7 +2390,7 @@ glBegin(GL_QUADS);              // Each set ofbulding body
 	glVertex2f(-0.02f, 0.1f);
 
 	glEnd();
-glBegin(GL_QUADS);              // Each set of bulding body er upor side
+glBegin(GL_QUADS);              // Each set of building body er upor side
 	glColor3ub(255, 255, 255 );
 	// Red
 
@@ -2498,15 +2498,53 @@ glLineWidth(2.5);
 	glColor3ub(189, 189, 189  );
 	// Red
 
-	glVertex2f(-0.095f, 0.1f); // buildingng door road   // x, y
+	glVertex2f(-0.095f, 0.1f); // building door road   // x, y
 	glVertex2f(-0.095f, 0.02f);
 	glVertex2f(-0.02f, 0.02f);    // x, y
 	glVertex2f(-0.02f, 0.1f);
 
 	glEnd();
+}
 
 
+void chair(){      ////chair
 
+    glBegin(GL_POLYGON);              // Each set of building form a quad
+	glColor3ub(255, 255, 255   );
+	// Red
+
+	glVertex2f(0.1f, 0.15f); //BODY   // x, y
+	glVertex2f(0.12f, 0.2f);
+	glVertex2f(0.24f, 0.2f);    // x, y
+	glVertex2f(0.225f, 0.15f);
+
+	glEnd();
+
+glLineWidth(3.3);
+	glBegin(GL_LINES);
+	glColor3ub(255, 255, 255   );
+
+	glVertex2f(0.123f, 0.2f); //HATOL
+	glVertex2f(0.123f, 0.255f);
+glVertex2f(0.237f, 0.255f);
+	glVertex2f(0.12f, 0.255f);
+	glVertex2f(0.237f, 0.2275f);
+	glVertex2f(0.12f, 0.2275f);
+glVertex2f(0.237f, 0.2f);
+	glVertex2f(0.237f, 0.255f);
+
+	glEnd();
+glLineWidth(5.0);
+	glBegin(GL_LINES);
+	glColor3ub(255, 255, 255   );
+
+	glVertex2f(0.105f, 0.15f);
+	glVertex2f(0.105f, 0.1f);
+	glVertex2f(0.22f, 0.15f);
+	glVertex2f(0.22f, 0.1f);
+    glVertex2f(0.235f, 0.2f);
+	glVertex2f(0.235f, 0.15f);
+	glEnd();
 }
 
 
