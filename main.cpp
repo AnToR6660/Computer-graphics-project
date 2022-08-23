@@ -2637,5 +2637,123 @@ glEnd();
 
 }
 
+void display(){
+           if(nightStatus==0){
+                    ///day
+     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+     glClear(GL_COLOR_BUFFER_BIT);
+
+   water();
+   glPushMatrix();
+   glTranslatef(-position,0.0f, 0.0f);
+   waterLine();
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(position,0.0f,0.0f);
+   drawBoat();
+   glPopMatrix();
+
+   sky();
+   glPushMatrix();
+   if(sunStatus==0){
+   sun();
+   }
+   else if (sunStatus==1){
+        glTranslatef(0.0f,position1,0.0f);
+         sun();
+   }
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(position,0.0f,0.0f);
+   cloud();
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(-position,0.0f,0.0f);
+   bird();
+   glPopMatrix();
+
+     field();
+     buildingPart();
+     chair();
+     tree();
+     hile();
+
+     drawRoad();
+     glPushMatrix();
+     glTranslatef(position,0.0f, 0.0f);
+     drawTruck();
+     drawCar();
+     if (carLightStatus==1){
+     drawCarLight();
+     drawTruckLight();
+     }
+
+    if(r != 0)
+        rain();
+     glPopMatrix();
+     drawLamp();
+
+
+glFlush();
+
+}
+    else {
+           ///night
+            glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+     glClear(GL_COLOR_BUFFER_BIT);
+
+   waterNight();
+   glPushMatrix();
+   glTranslatef(-position,0.0f, 0.0f);
+   waterLineNight();
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(position,0.0f,0.0f);
+   drawBoat();
+   glPopMatrix();
+
+   skyNight();
+   star();
+   glPushMatrix();
+   moon();
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(position,0.0f,0.0f);
+   cloudNight();
+   glPopMatrix();
+
+   glPushMatrix();
+   glTranslatef(-position,0.0f,0.0f);
+   bird();
+   glPopMatrix();
+
+     fieldNight();
+     buildingPart();
+     chair();
+     tree();
+     hile();
+
+     drawRoad();
+     glPushMatrix();
+     glTranslatef(position,0.0f, 0.0f);
+     drawTruck();
+     drawCar();
+     if (carLightStatus==1){
+     drawCarLight();
+     drawTruckLight();
+     }
+     glPopMatrix();
+     drawLamp();
+    if(r != 0)
+        rain();
+glFlush();
+
+         }
+}
 
 
