@@ -2756,4 +2756,23 @@ glFlush();
          }
 }
 
+void update_rain(int value){
+    if(position_rain < -0.1)
+        position_rain = 0.3f;
+    position_rain -= speed_rain;
+    if(position_rain2 > 2.0)
+        position_rain2 = 1.8f;
+    position_rain2 += speed_rain2;
+	glutPostRedisplay();
+	glutTimerFunc(100, update_rain, 0);
+}
+
+void rain_button(int button, int state, int x, int y){
+    if(button == GLUT_LEFT_BUTTON){
+        r++;
+    }
+    if(button == GLUT_RIGHT_BUTTON){
+        r = 0;
+    }
+}
 
