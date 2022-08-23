@@ -2378,6 +2378,135 @@ glVertex2f(-0.233f, 0.095f);    // x, y
 glVertex2f(-0.225f, 0.095f);
 	glEnd();
 
+/////Hospital
 
+glBegin(GL_QUADS);              // Each set ofbulding body
+	glColor3ub(255, 255, 255 );
+	// Red
+
+	glVertex2f(-0.18f, 0.1f);    // x, y
+	glVertex2f(-0.18f, 0.46f);
+	glVertex2f(-0.02f, 0.46f);    // x, y
+	glVertex2f(-0.02f, 0.1f);
+
+	glEnd();
+glBegin(GL_QUADS);              // Each set of bulding body er upor side
+	glColor3ub(255, 255, 255 );
+	// Red
+
+	glVertex2f(-0.195f, 0.46f);    // x, y
+	glVertex2f(-0.195f, 0.53f);
+	glVertex2f(-0.02f, 0.53f);    // x, y
+	glVertex2f(-0.02f, 0.46f);
+
+	glEnd();
+
+	glLineWidth(7.5);
+	glBegin(GL_LINES);
+	glColor3ub(186, 104, 200  );
+	glVertex2f(-0.21f, 0.54f);
+	glVertex2f(-0.01f, 0.54f);
+
+
+
+	glEnd();
+	glBegin(GL_QUADS);              // Each set of building body left glass body
+	glColor3ub(79, 195, 247  );
+	// Red
+
+	glVertex2f(-0.18f, 0.1f);    // x, y
+	glVertex2f(-0.18f, 0.46f);
+	glVertex2f(-0.14f, 0.46f);    // x, y
+	glVertex2f(-0.14f, 0.1f);
+
+	glEnd();
+glBegin(GL_QUADS);              // Each set of building body right glass body
+	glColor3ub(79, 195, 247  );
+	// Red
+
+	glVertex2f(-0.10f, 0.1f);    // x, y
+	glVertex2f(-0.10f, 0.46f);
+	glVertex2f(-0.02f, 0.46f);    // x, y
+	glVertex2f(-0.02f, 0.1f);
+
+	glEnd();
+	glLineWidth(1.5);
+	glBegin(GL_LINES);
+	glColor3ub(93, 109, 126     );//left glass body line
+	glVertex2f(-0.18f, 0.17f);
+	glVertex2f(-0.14f, 0.17f);
+
+glVertex2f(-0.18f, 0.24f);
+	glVertex2f(-0.14f, 0.24f);
+
+	glVertex2f(-0.18f, 0.31f);
+	glVertex2f(-0.14f, 0.31f);
+	glVertex2f(-0.18f, 0.38f);
+	glVertex2f(-0.14f, 0.38f);
+
+	glEnd();
+
+	glLineWidth(1.5);
+	glBegin(GL_LINES);
+	glColor3ub(255, 255, 255     );//right glass body
+	glVertex2f(-0.10f, 0.17f);
+	glVertex2f(-0.02f, 0.17f);
+
+glVertex2f(-0.10f, 0.24f);
+	glVertex2f(-0.02f, 0.24f);
+
+	glVertex2f(-0.10f, 0.31f);
+	glVertex2f(-0.02f, 0.31f);
+	glVertex2f(-0.10f, 0.38f);
+	glVertex2f(-0.02f, 0.38f);
+
+
+	glVertex2f(-0.045f, 0.46f);
+	glVertex2f(-0.045f, 0.17f);
+	glVertex2f(-0.075f, 0.46f);
+	glVertex2f(-0.075f, 0.17f);
+
+	glEnd();
+
+	glLineWidth(4.0);//door
+	glBegin(GL_LINES);
+	glColor3ub(44, 62, 80     );
+	glVertex2f(-0.085f, 0.17f);
+	glVertex2f(-0.035f, 0.17f);
+
+	glEnd();
+	glLineWidth(4.5);
+	glBegin(GL_LINES);//door
+	glColor3ub(40, 53, 147    );
+	glVertex2f(-0.081f, 0.165f);
+	glVertex2f(-0.081f, 0.1f);
+
+	glVertex2f(-0.039f, 0.165f);
+	glVertex2f(-0.039f, 0.1f);
+
+	glEnd();
+glLineWidth(2.5);
+	glBegin(GL_LINES);
+	glColor3ub(0, 0, 0    );//door
+
+
+	glVertex2f(-0.06f, 0.165f);
+	glVertex2f(-0.06f, 0.1f);
+
+	glEnd();
+	glBegin(GL_QUADS);              // Each set of building form a quad
+	glColor3ub(189, 189, 189  );
+	// Red
+
+	glVertex2f(-0.095f, 0.1f); // buildingng door road   // x, y
+	glVertex2f(-0.095f, 0.02f);
+	glVertex2f(-0.02f, 0.02f);    // x, y
+	glVertex2f(-0.02f, 0.1f);
+
+	glEnd();
+
+
+
+}
 
 
