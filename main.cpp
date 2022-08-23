@@ -2815,7 +2815,7 @@ int main(int argc, char** argv) {
     cout<<"Press 'D' = Switch to DAY view."<<endl;
     cout<<"Press 'LMB' = Start RAIN."<<endl;
     cout<<"Press 'RMB' = Stop RAIN."<<endl<<endl;
-    cout<<"Group Members:\n          NAME              ID\nSHEIKH TAHMEED HOSSAIN, 20-42981-1\nUDAY KUMAR SARKER PRANTO, 20-42941-1\nMD. OMAR FARUK FAISAL, 20-43669-2, FARIHA SHAHRIN,20-42929-1
+    cout<<"Group Members:\n          NAME              ID\nSHEIKH TAHMEED HOSSAIN, 20-42981-1\nUDAY KUMAR SARKER PRANTO, 20-42941-1\nMD. OMAR FARUK FAISAL, 20-43669-2\nFARIHA SHAHRIN,20-42929-1
 "<<endl;
 
    glutDisplayFunc(display);
